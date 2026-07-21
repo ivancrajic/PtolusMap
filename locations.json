@@ -1,0 +1,224 @@
+[
+  {
+    "name": "Rivergate",
+    "type": "district",
+    "px": 1894,
+    "py": 796
+  },
+  {
+    "name": "North Market",
+    "type": "district",
+    "px": 3128,
+    "py": 1084
+  },
+  {
+    "name": "Nobles' Quarter",
+    "type": "district",
+    "px": 578,
+    "py": 1504
+  },
+  {
+    "name": "The Spire",
+    "type": "district",
+    "px": 296,
+    "py": 1858
+  },
+  {
+    "name": "Oldtown",
+    "type": "district",
+    "px": 1304,
+    "py": 1790
+  },
+  {
+    "name": "Temple District",
+    "type": "district",
+    "px": 2792,
+    "py": 1458
+  },
+  {
+    "name": "Midtown",
+    "type": "district",
+    "px": 3128,
+    "py": 2132
+  },
+  {
+    "name": "South Market",
+    "type": "district",
+    "px": 1992,
+    "py": 2654
+  },
+  {
+    "name": "Guildsman District",
+    "type": "district",
+    "px": 3572,
+    "py": 2802
+  },
+  {
+    "name": "Necropolis",
+    "type": "district",
+    "px": 4456,
+    "py": 1232
+  },
+  {
+    "name": "The Quiet",
+    "type": "landmark",
+    "px": 4226,
+    "py": 993
+  },
+  {
+    "name": "The Waiting",
+    "type": "landmark",
+    "px": 4335,
+    "py": 1373
+  },
+  {
+    "name": "Bone Hill",
+    "type": "landmark",
+    "px": 4731,
+    "py": 1108
+  },
+  {
+    "name": "The Howling",
+    "type": "landmark",
+    "px": 4675,
+    "py": 1371
+  },
+  {
+    "name": "The Docks",
+    "type": "district",
+    "px": 5316,
+    "py": 1918
+  },
+  {
+    "name": "The Warrens",
+    "type": "district",
+    "px": 4714,
+    "py": 2566
+  },
+  {
+    "name": "North Gate",
+    "type": "gate",
+    "px": 2220,
+    "py": 744
+  },
+  {
+    "name": "Old City Gate",
+    "type": "gate",
+    "px": 1396,
+    "py": 1240
+  },
+  {
+    "name": "South Gate",
+    "type": "gate",
+    "px": 2304,
+    "py": 3202
+  },
+  {
+    "name": "Market Gate",
+    "type": "gate",
+    "px": 1566,
+    "py": 3382
+  },
+  {
+    "name": "Dalen's Cliffs",
+    "type": "landmark",
+    "px": 1708,
+    "py": 2520
+  },
+  {
+    "name": "Guilder Gate",
+    "type": "gate",
+    "px": 3750,
+    "py": 3520
+  },
+  {
+    "name": "Tournament Field",
+    "type": "landmark",
+    "px": 2486,
+    "py": 656
+  },
+  {
+    "name": "King's River Gorge",
+    "type": "landmark",
+    "px": 700,
+    "py": 830
+  },
+  {
+    "name": "Emerald Hill",
+    "type": "landmark",
+    "px": 2640,
+    "py": 1830
+  },
+  {
+    "name": "Beacon Island",
+    "type": "landmark",
+    "px": 5598,
+    "py": 3084
+  },
+  {
+    "name": "Tent City",
+    "type": "landmark",
+    "px": 1614,
+    "py": 3584
+  },
+  {
+    "name": "Katterwood",
+    "type": "landmark",
+    "px": 3710,
+    "py": 1960
+  },
+  {
+    "name": "Gasping Falls",
+    "type": "landmark",
+    "px": 4710,
+    "py": 2448
+  },
+  {
+    "name": "Cliffs of Lost Souls",
+    "type": "landmark",
+    "px": 4792,
+    "py": 2828
+  },
+  {
+    "name": "Fairstar",
+    "type": "landmark",
+    "px": 2630,
+    "py": 2274
+  },
+  {
+    "name": "Mane",
+    "type": "landmark",
+    "px": 3376,
+    "py": 2118
+  },
+  {
+    "name": "Narred",
+    "type": "landmark",
+    "px": 3948,
+    "py": 2338
+  },
+  {
+    "name": "Jeweled Cliffs",
+    "type": "district",
+    "px": 928,
+    "py": 2284
+  },
+  {
+    "name": "Bay of Ptolus",
+    "type": "area",
+    "px": 5306,
+    "py": 2604
+  },
+  {
+    "name": "Longbottom",
+    "type": "landmark",
+    "px": 2896,
+    "py": 2583
+  },
+  {
+    "name": "Delver's Square",
+    "type": "landmark",
+    "px": 2910,
+    "py": 2075
+  }
+]

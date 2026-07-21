@@ -1,0 +1,14 @@
+{
+  "name": "Python + Claude Code (Apple Silicon)",
+  "build": {
+    "dockerfile": "dockerfile"
+  },
+  "remoteUser": "vscode",
+  "containerEnv": {
+    "CLAUDE_CODE_OAUTH_TOKEN": "${localEnv:CLAUDE_CODE_OAUTH_TOKEN}",
+    "OLLAMA_BASE_URL": "http://host.docker.internal:11434",
+    "PULUMI_CONFIG_PASSPHRASE_FILE": "${containerWorkspaceFolder}/.pulumi-passphrase"
+  },
+  "runArgs": ["--init"],
+  "postCreateCommand": "python -m venv .venv && .venv/bin/pip install --upgrade pip -q && .venv/bin/pip install -r requirements.txt && python --version && claude --version && pulumi version"
+}

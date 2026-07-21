@@ -1,0 +1,32 @@
+FROM mcr.microsoft.com/devcontainers/python:3.13
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install -y \
+    curl \
+    git \
+    build-essential \
+    ripgrep \
+    jq \
+    unzip \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN ARCH=$(uname -m) && \
+    if [ "$ARCH" = "aarch64" ]; then \
+        curl -fsSL "https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip" -o awscliv2.zip; \
+    else \
+        curl -fsSL "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o awscliv2.zip; \
+    fi && \
+    unzip awscliv2.zip && \
+    ./aws/install && \
+    rm -rf awscliv2.zip aws
+
+USER vscode
+
+RUN curl -fsSL https://claude.ai/install.sh | bash
+
+RUN curl -fsSL https://get.pulumi.com | sh
+
+ENV PATH="/home/vscode/.pulumi/bin:/home/vscode/.local/bin:${PATH}"
+
+RUN echo 'export PATH="$HOME/.pulumi/bin:$HOME/.local/bin:$PATH"' >> ~/.bashrc
