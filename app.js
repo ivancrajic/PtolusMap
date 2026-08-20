@@ -2,6 +2,13 @@
   const IMG_W = 5976;
   const IMG_H = 3960;
 
+  // Editing tools (add location / calibrate) only run against a local dev
+  // server — the deployed site loads the same files but never enables them.
+  // Excludes file:// (empty hostname): locations.json fetch is blocked there
+  // anyway, so the whole app — not just editing — needs a real local server.
+  var isLocalDev = ['localhost', '127.0.0.1'].indexOf(window.location.hostname) !== -1;
+  if (isLocalDev) { document.body.classList.add('edit-mode'); }
+
   var calibrating = false;
 
   const map = L.map('map', {
@@ -34,6 +41,7 @@
     clearHighlight();
     var latlng = toLL(loc.px, loc.py);
     var isLarge = loc.type === 'district' || loc.type === 'area';
+    var isStreet = loc.type === 'street';
     activeMarker = L.marker(latlng, {
       icon: L.divIcon({
         className: 'ptolus-highlight',
@@ -44,12 +52,57 @@
       }),
       zIndexOffset: 1000,
     }).addTo(map);
-    map.flyTo(latlng, isLarge ? -1 : 0, { duration: 0.75 });
+    var zoom = isLarge ? -1 : isStreet ? 1 : 0;
+    map.flyTo(latlng, zoom, { duration: 0.75 });
     if (listItem) {
       listItem.classList.add('active');
       listItem.scrollIntoView({ block: 'nearest' });
       activeListItem = listItem;
     }
+  }
+
+  // Marks a location's current position without moving the map — used during
+  // batch calibration so the view stays put while stepping through a section.
+  function showCalibMarker(loc) {
+    clearHighlight();
+    activeMarker = L.marker(toLL(loc.px, loc.py), {
+      icon: L.divIcon({
+        className: 'ptolus-highlight',
+        html: '<div class="highlight-ring small">' +
+              '<div class="highlight-label">' + loc.name + '</div></div>',
+        iconSize: [0, 0],
+        iconAnchor: [0, 0],
+      }),
+      zIndexOffset: 1000,
+    }).addTo(map);
+  }
+
+  // Buckets locations into a grid matching the tile layout used to read the
+  // map (1000×700px cells) so batch calibration can walk one section at a
+  // time instead of jumping around the city between every single item.
+  var TILE_W = 1000;
+  var TILE_H = 700;
+
+  function groupByTile(locs) {
+    var cols = Math.ceil(IMG_W / TILE_W);
+    var buckets = {};
+    locs.forEach(function (l) {
+      var col = Math.min(cols - 1, Math.floor(l.px / TILE_W));
+      var row = Math.floor(l.py / TILE_H);
+      var key = row + '-' + col;
+      if (!buckets[key]) buckets[key] = { row: row, col: col, items: [] };
+      buckets[key].items.push(l);
+    });
+    var groups = Object.keys(buckets).map(function (k) { return buckets[k]; });
+    groups.sort(function (a, b) { return (a.row - b.row) || (a.col - b.col); });
+    groups.forEach(function (g) {
+      g.items.sort(function (a, b) { return a.name.localeCompare(b.name); });
+      g.x0 = g.col * TILE_W;
+      g.y0 = g.row * TILE_H;
+      g.x1 = Math.min(IMG_W, g.x0 + TILE_W);
+      g.y1 = Math.min(IMG_H, g.y0 + TILE_H);
+    });
+    return groups;
   }
 
   // Always log coordinates on click — useful during calibration
@@ -86,14 +139,17 @@
         });
       }
 
-      buildList(locations);
+      var sorted = locations.slice().sort(function (a, b) {
+        return a.name.localeCompare(b.name);
+      });
+      buildList(sorted);
 
       input.addEventListener('input', function () {
         var q = input.value.toLowerCase().trim();
         clearBtn.style.display = q ? 'block' : 'none';
-        var filtered = q ? locations.filter(function (l) {
+        var filtered = q ? sorted.filter(function (l) {
           return l.name.toLowerCase().includes(q);
-        }) : locations;
+        }) : sorted;
         buildList(filtered);
         if (q && filtered.length === 1) {
           showHighlight(filtered[0], list.querySelector('li'));
@@ -103,7 +159,7 @@
       clearBtn.addEventListener('click', function () {
         input.value = '';
         clearBtn.style.display = 'none';
-        buildList(locations);
+        buildList(sorted);
         clearHighlight();
         map.fitBounds(bounds, { padding: [8, 8], animate: true, duration: 0.6 });
       });
@@ -111,6 +167,107 @@
       map.on('click', function () {
         if (!calibrating) clearHighlight();
       });
+
+      // ── Shared export modal ──────────────────────────────────────────────
+
+      function showExportModal(title, json) {
+        var modal = document.createElement('div');
+        modal.id = 'calib-export';
+        modal.innerHTML =
+          '<div class="export-title">' + title + '</div>' +
+          '<div class="export-sub">Select all and copy, then replace locations.json</div>' +
+          '<textarea class="export-textarea" readonly>' + json + '</textarea>' +
+          '<button class="export-close">Done</button>';
+        document.body.appendChild(modal);
+        modal.querySelector('.export-textarea').select();
+        modal.querySelector('.export-close').addEventListener('click', function () {
+          modal.remove();
+        });
+      }
+
+      // ── Add location ──────────────────────────────────────────────────────
+
+      document.getElementById('add-location-btn').addEventListener('click', function () {
+        startAddLocation(locations);
+      });
+
+      function startAddLocation(locs) {
+        calibrating = true;
+        clearHighlight();
+
+        var overlay = document.createElement('div');
+        overlay.id = 'calib-overlay';
+        overlay.innerHTML =
+          '<div class="calib-name">Add Location</div>' +
+          '<div class="add-loc-form">' +
+            '<input class="add-loc-name" type="text" placeholder="Location name" autocomplete="off">' +
+            '<select class="add-loc-type">' +
+              '<option value="property">Property</option>' +
+              '<option value="landmark">Landmark</option>' +
+              '<option value="gate">Gate</option>' +
+              '<option value="district">District</option>' +
+              '<option value="area">Area</option>' +
+              '<option value="street">Street</option>' +
+            '</select>' +
+            '<div class="add-loc-actions">' +
+              '<button class="add-loc-place">Place on Map</button>' +
+              '<button class="calib-skip">Cancel</button>' +
+            '</div>' +
+          '</div>';
+        document.getElementById('map').appendChild(overlay);
+
+        overlay.querySelector('.calib-skip').addEventListener('click', function (e) {
+          e.stopPropagation();
+          calibrating = false;
+          overlay.remove();
+        });
+
+        var nameInput = overlay.querySelector('.add-loc-name');
+        var typeSelect = overlay.querySelector('.add-loc-type');
+        nameInput.focus();
+
+        overlay.querySelector('.add-loc-place').addEventListener('click', function (e) {
+          e.stopPropagation();
+          var name = nameInput.value.trim();
+          if (!name) { nameInput.focus(); return; }
+          var type = typeSelect.value;
+
+          overlay.innerHTML =
+            '<div class="calib-name">' + name + '</div>' +
+            '<div class="calib-sub">Click on the map to place it</div>' +
+            '<button class="calib-skip">Cancel</button>';
+
+          var clickHandler = null;
+
+          overlay.querySelector('.calib-skip').addEventListener('click', function (e2) {
+            e2.stopPropagation();
+            if (clickHandler) { map.off('click', clickHandler); }
+            calibrating = false;
+            overlay.remove();
+          });
+
+          clickHandler = function (e2) {
+            map.off('click', clickHandler);
+            var loc = {
+              name: name,
+              type: type,
+              px: Math.round(e2.latlng.lng),
+              py: Math.round(IMG_H - e2.latlng.lat),
+            };
+            locs.push(loc);
+
+            sorted = locs.slice().sort(function (a, b) { return a.name.localeCompare(b.name); });
+            buildList(sorted);
+
+            calibrating = false;
+            overlay.remove();
+
+            showHighlight(loc, null);
+            showExportModal(name + ' added', JSON.stringify(locs, null, 2));
+          };
+          map.on('click', clickHandler);
+        });
+      }
 
       // ── Calibration ────────────────────────────────────────────────────────
 
@@ -148,19 +305,7 @@
           calibrating = false;
           overlay.remove();
 
-          var json = JSON.stringify(locations, null, 2);
-          var modal = document.createElement('div');
-          modal.id = 'calib-export';
-          modal.innerHTML =
-            '<div class="export-title">' + loc.name + ' updated</div>' +
-            '<div class="export-sub">Select all and copy, then replace locations.json</div>' +
-            '<textarea class="export-textarea" readonly>' + json + '</textarea>' +
-            '<button class="export-close">Done</button>';
-          document.body.appendChild(modal);
-          modal.querySelector('.export-textarea').select();
-          modal.querySelector('.export-close').addEventListener('click', function () {
-            modal.remove();
-          });
+          showExportModal(loc.name + ' updated', JSON.stringify(locations, null, 2));
         };
         map.on('click', clickHandler);
       }
@@ -169,8 +314,24 @@
         calibrating = true;
         clearHighlight();
 
-        var calibrated = locs.map(function (l) { return Object.assign({}, l); });
+        // Keep each item's place in the source array so the exported JSON
+        // preserves file order even though we walk it grouped by section.
+        var source = locs.map(function (l, i) {
+          var copy = Object.assign({}, l);
+          copy._origIndex = i;
+          return copy;
+        });
+        var groups = groupByTile(source);
+        var calibrated = [];
+        groups.forEach(function (g, gi) {
+          g.items.forEach(function (item) {
+            item._group = gi;
+            calibrated.push(item);
+          });
+        });
+
         var idx = 0;
+        var lastGroup = -1;
         var clickHandler = null;
 
         var overlay = document.createElement('div');
@@ -187,9 +348,15 @@
           }
 
           var loc = calibrated[idx];
+          var group = groups[loc._group];
+          var enteringNewGroup = loc._group !== lastGroup;
+          lastGroup = loc._group;
+
           overlay.innerHTML =
             '<div class="calib-name">' + loc.name + '</div>' +
             '<div class="calib-sub">Click on this location on the map</div>' +
+            '<div class="calib-section">Section ' + (loc._group + 1) + ' of ' + groups.length +
+              ' — ' + group.items.length + ' locations</div>' +
             '<div class="calib-progress">' + (idx + 1) + ' / ' + calibrated.length + '</div>' +
             '<button class="calib-skip">Skip</button>';
 
@@ -200,7 +367,12 @@
             step();
           });
 
-          map.flyTo(toLL(loc.px, loc.py), -1, { duration: 0.4 });
+          showCalibMarker(loc);
+
+          if (enteringNewGroup) {
+            var bounds = L.latLngBounds(toLL(group.x0, group.y0), toLL(group.x1, group.y1));
+            map.flyToBounds(bounds, { duration: 0.6, padding: [30, 30] });
+          }
 
           clickHandler = function (e) {
             calibrated[idx].px = Math.round(e.latlng.lng);
@@ -214,22 +386,14 @@
         function finish() {
           if (clickHandler) { map.off('click', clickHandler); clickHandler = null; }
           calibrating = false;
+          clearHighlight();
           overlay.remove();
 
-          // Show the result in a copyable textarea (reliable across all browsers)
-          var json = JSON.stringify(calibrated, null, 2);
-          var modal = document.createElement('div');
-          modal.id = 'calib-export';
-          modal.innerHTML =
-            '<div class="export-title">Calibration complete</div>' +
-            '<div class="export-sub">Select all and copy, then replace locations.json</div>' +
-            '<textarea class="export-textarea" readonly>' + json + '</textarea>' +
-            '<button class="export-close">Done</button>';
-          document.body.appendChild(modal);
-          modal.querySelector('.export-textarea').select();
-          modal.querySelector('.export-close').addEventListener('click', function () {
-            modal.remove();
-          });
+          var cleaned = calibrated.slice()
+            .sort(function (a, b) { return a._origIndex - b._origIndex; })
+            .map(function (l) { return { name: l.name, type: l.type, px: l.px, py: l.py }; });
+
+          showExportModal('Calibration complete', JSON.stringify(cleaned, null, 2));
         }
 
         step();

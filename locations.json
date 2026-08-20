@@ -2,223 +2,2839 @@
   {
     "name": "Rivergate",
     "type": "district",
-    "px": 1894,
-    "py": 796
+    "px": 1893,
+    "py": 793
   },
   {
     "name": "North Market",
     "type": "district",
-    "px": 3128,
-    "py": 1084
+    "px": 3123,
+    "py": 1083
   },
   {
     "name": "Nobles' Quarter",
     "type": "district",
     "px": 578,
-    "py": 1504
+    "py": 1500
   },
   {
     "name": "The Spire",
     "type": "district",
     "px": 296,
-    "py": 1858
+    "py": 1859
   },
   {
     "name": "Oldtown",
     "type": "district",
-    "px": 1304,
-    "py": 1790
+    "px": 1300,
+    "py": 1786
   },
   {
     "name": "Temple District",
     "type": "district",
     "px": 2792,
-    "py": 1458
+    "py": 1459
   },
   {
     "name": "Midtown",
     "type": "district",
-    "px": 3128,
+    "px": 3123,
     "py": 2132
   },
   {
     "name": "South Market",
     "type": "district",
-    "px": 1992,
-    "py": 2654
+    "px": 1991,
+    "py": 2649
   },
   {
     "name": "Guildsman District",
     "type": "district",
-    "px": 3572,
+    "px": 3571,
     "py": 2802
   },
   {
     "name": "Necropolis",
     "type": "district",
-    "px": 4456,
-    "py": 1232
+    "px": 4463,
+    "py": 1234
   },
   {
     "name": "The Quiet",
     "type": "landmark",
-    "px": 4226,
-    "py": 993
+    "px": 4228,
+    "py": 991
   },
   {
     "name": "The Waiting",
     "type": "landmark",
-    "px": 4335,
-    "py": 1373
+    "px": 4336,
+    "py": 1371
   },
   {
     "name": "Bone Hill",
     "type": "landmark",
     "px": 4731,
-    "py": 1108
+    "py": 1101
   },
   {
     "name": "The Howling",
     "type": "landmark",
-    "px": 4675,
+    "px": 4678,
     "py": 1371
   },
   {
     "name": "The Docks",
     "type": "district",
     "px": 5316,
-    "py": 1918
+    "py": 1914
   },
   {
     "name": "The Warrens",
     "type": "district",
-    "px": 4714,
-    "py": 2566
+    "px": 4712,
+    "py": 2558
   },
   {
     "name": "North Gate",
     "type": "gate",
     "px": 2220,
-    "py": 744
+    "py": 743
   },
   {
     "name": "Old City Gate",
     "type": "gate",
-    "px": 1396,
-    "py": 1240
+    "px": 1402,
+    "py": 1233
   },
   {
     "name": "South Gate",
     "type": "gate",
-    "px": 2304,
-    "py": 3202
+    "px": 2305,
+    "py": 3199
   },
   {
     "name": "Market Gate",
     "type": "gate",
-    "px": 1566,
-    "py": 3382
+    "px": 1572,
+    "py": 3379
   },
   {
     "name": "Dalen's Cliffs",
     "type": "landmark",
-    "px": 1708,
-    "py": 2520
+    "px": 1707,
+    "py": 2516
   },
   {
     "name": "Guilder Gate",
     "type": "gate",
-    "px": 3750,
-    "py": 3520
+    "px": 3754,
+    "py": 3519
   },
   {
     "name": "Tournament Field",
     "type": "landmark",
-    "px": 2486,
-    "py": 656
+    "px": 2485,
+    "py": 657
   },
   {
     "name": "King's River Gorge",
     "type": "landmark",
-    "px": 700,
+    "px": 699,
     "py": 830
   },
   {
     "name": "Emerald Hill",
     "type": "landmark",
-    "px": 2640,
-    "py": 1830
+    "px": 2638,
+    "py": 1825
   },
   {
     "name": "Beacon Island",
     "type": "landmark",
-    "px": 5598,
-    "py": 3084
+    "px": 5597,
+    "py": 3083
   },
   {
     "name": "Tent City",
     "type": "landmark",
-    "px": 1614,
-    "py": 3584
+    "px": 1616,
+    "py": 3582
   },
   {
     "name": "Katterwood",
     "type": "landmark",
     "px": 3710,
-    "py": 1960
+    "py": 1954
   },
   {
     "name": "Gasping Falls",
     "type": "landmark",
     "px": 4710,
-    "py": 2448
-  },
-  {
-    "name": "Cliffs of Lost Souls",
-    "type": "landmark",
-    "px": 4792,
-    "py": 2828
-  },
-  {
-    "name": "Fairstar",
-    "type": "landmark",
-    "px": 2630,
-    "py": 2274
+    "py": 2447
   },
   {
     "name": "Mane",
     "type": "landmark",
     "px": 3376,
-    "py": 2118
+    "py": 2117
   },
   {
     "name": "Narred",
     "type": "landmark",
-    "px": 3948,
+    "px": 3949,
     "py": 2338
   },
   {
     "name": "Jeweled Cliffs",
     "type": "district",
-    "px": 928,
-    "py": 2284
+    "px": 926,
+    "py": 2281
   },
   {
     "name": "Bay of Ptolus",
     "type": "area",
-    "px": 5306,
-    "py": 2604
+    "px": 5304,
+    "py": 2601
   },
   {
     "name": "Longbottom",
     "type": "landmark",
-    "px": 2896,
-    "py": 2583
+    "px": 2895,
+    "py": 2581
   },
   {
     "name": "Delver's Square",
     "type": "landmark",
-    "px": 2910,
-    "py": 2075
+    "px": 2909,
+    "py": 2074
+  },
+  {
+    "name": "Abanath Street",
+    "type": "street",
+    "px": 2811,
+    "py": 1238
+  },
+  {
+    "name": "Able Row",
+    "type": "street",
+    "px": 2975,
+    "py": 2455
+  },
+  {
+    "name": "Adamantine Street",
+    "type": "street",
+    "px": 3619,
+    "py": 2245
+  },
+  {
+    "name": "Addares St.",
+    "type": "street",
+    "px": 3893,
+    "py": 1055
+  },
+  {
+    "name": "Alabaster Street",
+    "type": "street",
+    "px": 1996,
+    "py": 2527
+  },
+  {
+    "name": "Alder Street",
+    "type": "street",
+    "px": 3831,
+    "py": 2273
+  },
+  {
+    "name": "Amble Way",
+    "type": "street",
+    "px": 2670,
+    "py": 2741
+  },
+  {
+    "name": "Anadem Street",
+    "type": "street",
+    "px": 2659,
+    "py": 945
+  },
+  {
+    "name": "Anchor Street",
+    "type": "street",
+    "px": 2859,
+    "py": 2655
+  },
+  {
+    "name": "Annointed Street",
+    "type": "street",
+    "px": 2672,
+    "py": 1344
+  },
+  {
+    "name": "Applecart Street",
+    "type": "street",
+    "px": 1579,
+    "py": 2752
+  },
+  {
+    "name": "Apricot Street",
+    "type": "street",
+    "px": 2659,
+    "py": 2962
+  },
+  {
+    "name": "Arch Street",
+    "type": "street",
+    "px": 1270,
+    "py": 2324
+  },
+  {
+    "name": "Argent Street",
+    "type": "street",
+    "px": 3621,
+    "py": 1064
+  },
+  {
+    "name": "Ash Street",
+    "type": "street",
+    "px": 3254,
+    "py": 2392
+  },
+  {
+    "name": "Astanarath St.",
+    "type": "street",
+    "px": 2760,
+    "py": 2270
+  },
+  {
+    "name": "Astor Street",
+    "type": "street",
+    "px": 3945,
+    "py": 3061
+  },
+  {
+    "name": "Bedibeck Street",
+    "type": "street",
+    "px": 1543,
+    "py": 2771
+  },
+  {
+    "name": "Bad Luck Ln.",
+    "type": "street",
+    "px": 4370,
+    "py": 2367
+  },
+  {
+    "name": "Baker Street",
+    "type": "street",
+    "px": 3089,
+    "py": 820
+  },
+  {
+    "name": "Balance Walk",
+    "type": "street",
+    "px": 3543,
+    "py": 1570
+  },
+  {
+    "name": "Barber Lane",
+    "type": "street",
+    "px": 2127,
+    "py": 1694
+  },
+  {
+    "name": "Barrister Street",
+    "type": "street",
+    "px": 999,
+    "py": 2728
+  },
+  {
+    "name": "Basker Close",
+    "type": "street",
+    "px": 4509,
+    "py": 1759
+  },
+  {
+    "name": "Basker Way",
+    "type": "street",
+    "px": 4604,
+    "py": 1804
+  },
+  {
+    "name": "Bay Street",
+    "type": "street",
+    "px": 5051,
+    "py": 1857
+  },
+  {
+    "name": "Becker Street",
+    "type": "street",
+    "px": 1586,
+    "py": 2076
+  },
+  {
+    "name": "Bell Street",
+    "type": "street",
+    "px": 2680,
+    "py": 2207
+  },
+  {
+    "name": "Berry Lane",
+    "type": "street",
+    "px": 2684,
+    "py": 2923
+  },
+  {
+    "name": "Beryl Street",
+    "type": "street",
+    "px": 3335,
+    "py": 1304
+  },
+  {
+    "name": "Bester Street",
+    "type": "street",
+    "px": 1883,
+    "py": 2542
+  },
+  {
+    "name": "Betty Lane",
+    "type": "street",
+    "px": 4639,
+    "py": 1557
+  },
+  {
+    "name": "Birch Street",
+    "type": "street",
+    "px": 3746,
+    "py": 2012
+  },
+  {
+    "name": "Black St.",
+    "type": "street",
+    "px": 3314,
+    "py": 3234
+  },
+  {
+    "name": "Bladeburn Street",
+    "type": "street",
+    "px": 1952,
+    "py": 2517
+  },
+  {
+    "name": "Blazon Street",
+    "type": "street",
+    "px": 667,
+    "py": 1738
+  },
+  {
+    "name": "Blue Centaur Way",
+    "type": "street",
+    "px": 3980,
+    "py": 2389
+  },
+  {
+    "name": "Blue Street",
+    "type": "street",
+    "px": 2120,
+    "py": 1763
+  },
+  {
+    "name": "Blueyes Lane",
+    "type": "street",
+    "px": 4234,
+    "py": 3425
+  },
+  {
+    "name": "Blunt St.",
+    "type": "street",
+    "px": 3245,
+    "py": 3217
+  },
+  {
+    "name": "Bond Street",
+    "type": "street",
+    "px": 3648,
+    "py": 3124
+  },
+  {
+    "name": "Bookman Street",
+    "type": "street",
+    "px": 4323,
+    "py": 2084
+  },
+  {
+    "name": "Brandywine Street",
+    "type": "street",
+    "px": 4414,
+    "py": 3184
+  },
+  {
+    "name": "Brass Street",
+    "type": "street",
+    "px": 3163,
+    "py": 2908
+  },
+  {
+    "name": "Brewer's Close",
+    "type": "street",
+    "px": 3817,
+    "py": 3256
+  },
+  {
+    "name": "Bridge Street",
+    "type": "street",
+    "px": 3293,
+    "py": 2298
+  },
+  {
+    "name": "Brightfather Street",
+    "type": "street",
+    "px": 1780,
+    "py": 1735
+  },
+  {
+    "name": "Broken Leg Row",
+    "type": "street",
+    "px": 2116,
+    "py": 1939
+  },
+  {
+    "name": "Buffet Street",
+    "type": "street",
+    "px": 3844,
+    "py": 985
+  },
+  {
+    "name": "Calabis Street",
+    "type": "street",
+    "px": 3275,
+    "py": 1269
+  },
+  {
+    "name": "Carriage Row",
+    "type": "street",
+    "px": 2922,
+    "py": 2824
+  },
+  {
+    "name": "Carter Street",
+    "type": "street",
+    "px": 3161,
+    "py": 1213
+  },
+  {
+    "name": "Carver Lane",
+    "type": "street",
+    "px": 3776,
+    "py": 1199
+  },
+  {
+    "name": "Castle Street",
+    "type": "street",
+    "px": 1098,
+    "py": 2469
+  },
+  {
+    "name": "Catbird Street",
+    "type": "street",
+    "px": 2623,
+    "py": 924
+  },
+  {
+    "name": "Caterwaul Street",
+    "type": "street",
+    "px": 3583,
+    "py": 1267
+  },
+  {
+    "name": "Celery Lane",
+    "type": "street",
+    "px": 2624,
+    "py": 799
+  },
+  {
+    "name": "Center Street",
+    "type": "street",
+    "px": 4195,
+    "py": 1612
+  },
+  {
+    "name": "Chalice Road",
+    "type": "street",
+    "px": 2773,
+    "py": 1531
+  },
+  {
+    "name": "Champion St.",
+    "type": "street",
+    "px": 3376,
+    "py": 1545
+  },
+  {
+    "name": "Childseye Street",
+    "type": "street",
+    "px": 2006,
+    "py": 2949
+  },
+  {
+    "name": "Citation Street",
+    "type": "street",
+    "px": 802,
+    "py": 2584
+  },
+  {
+    "name": "Cliffs of Lost Wishes",
+    "type": "street",
+    "px": 4790,
+    "py": 2826
+  },
+  {
+    "name": "Cloud Way",
+    "type": "street",
+    "px": 4742,
+    "py": 2291
+  },
+  {
+    "name": "Coal Street",
+    "type": "street",
+    "px": 2884,
+    "py": 3197
+  },
+  {
+    "name": "Cobbler's Road",
+    "type": "street",
+    "px": 3578,
+    "py": 3025
+  },
+  {
+    "name": "Coldheart Street",
+    "type": "street",
+    "px": 3550,
+    "py": 3174
+  },
+  {
+    "name": "Collins St.",
+    "type": "street",
+    "px": 1874,
+    "py": 2867
+  },
+  {
+    "name": "Columned Row",
+    "type": "street",
+    "px": 1129,
+    "py": 1731
+  },
+  {
+    "name": "Constable Way",
+    "type": "street",
+    "px": 4127,
+    "py": 2765
+  },
+  {
+    "name": "Cooper Street",
+    "type": "street",
+    "px": 1818,
+    "py": 3228
+  },
+  {
+    "name": "Cord Street",
+    "type": "street",
+    "px": 2416,
+    "py": 2707
+  },
+  {
+    "name": "Courier Lane",
+    "type": "street",
+    "px": 4268,
+    "py": 3018
+  },
+  {
+    "name": "Crane Street",
+    "type": "street",
+    "px": 1571,
+    "py": 2931
+  },
+  {
+    "name": "Crispin Close",
+    "type": "street",
+    "px": 2986,
+    "py": 2622
+  },
+  {
+    "name": "Crispin Street",
+    "type": "street",
+    "px": 2858,
+    "py": 2500
+  },
+  {
+    "name": "Crossing Street",
+    "type": "street",
+    "px": 1461,
+    "py": 1532
+  },
+  {
+    "name": "Crow's Walk",
+    "type": "street",
+    "px": 2127,
+    "py": 2866
+  },
+  {
+    "name": "Crown Street",
+    "type": "street",
+    "px": 713,
+    "py": 2235
+  },
+  {
+    "name": "Crumpet St.",
+    "type": "street",
+    "px": 1497,
+    "py": 3215
+  },
+  {
+    "name": "Current Lane",
+    "type": "street",
+    "px": 4448,
+    "py": 2059
+  },
+  {
+    "name": "Curtain Street",
+    "type": "street",
+    "px": 4217,
+    "py": 2857
+  },
+  {
+    "name": "Dalenguard Road",
+    "type": "street",
+    "px": 1421,
+    "py": 2131
+  },
+  {
+    "name": "Damad Street",
+    "type": "street",
+    "px": 1429,
+    "py": 2430
+  },
+  {
+    "name": "Dead Orc Lane",
+    "type": "street",
+    "px": 4007,
+    "py": 3120
+  },
+  {
+    "name": "Decker Street",
+    "type": "street",
+    "px": 1841,
+    "py": 2303
+  },
+  {
+    "name": "Deed Street",
+    "type": "street",
+    "px": 820,
+    "py": 1360
+  },
+  {
+    "name": "Diamond Street",
+    "type": "street",
+    "px": 2708,
+    "py": 977
+  },
+  {
+    "name": "Dionys St.",
+    "type": "street",
+    "px": 2906,
+    "py": 1990
+  },
+  {
+    "name": "Discourse Street",
+    "type": "street",
+    "px": 3154,
+    "py": 1501
+  },
+  {
+    "name": "Discovery Lane",
+    "type": "street",
+    "px": 3154,
+    "py": 997
+  },
+  {
+    "name": "Distillery St.",
+    "type": "street",
+    "px": 4749,
+    "py": 2153
+  },
+  {
+    "name": "Dragon Street",
+    "type": "street",
+    "px": 2201,
+    "py": 2232
+  },
+  {
+    "name": "Draper's Row",
+    "type": "street",
+    "px": 4011,
+    "py": 2937
+  },
+  {
+    "name": "Draw Street",
+    "type": "street",
+    "px": 2431,
+    "py": 2594
+  },
+  {
+    "name": "Dreamtree Street",
+    "type": "street",
+    "px": 2529,
+    "py": 3003
+  },
+  {
+    "name": "Duster Street",
+    "type": "street",
+    "px": 2152,
+    "py": 2118
+  },
+  {
+    "name": "Dwindle Street",
+    "type": "street",
+    "px": 1871,
+    "py": 3027
+  },
+  {
+    "name": "E Surf Street",
+    "type": "street",
+    "px": 4659,
+    "py": 3158
+  },
+  {
+    "name": "E. Copper Street",
+    "type": "street",
+    "px": 3366,
+    "py": 2578
+  },
+  {
+    "name": "E. Steel Street",
+    "type": "street",
+    "px": 3395,
+    "py": 2633
+  },
+  {
+    "name": "Eagle's Roost",
+    "type": "street",
+    "px": 4282,
+    "py": 3289
+  },
+  {
+    "name": "East Street",
+    "type": "street",
+    "px": 4396,
+    "py": 2832
+  },
+  {
+    "name": "Elixer St.",
+    "type": "street",
+    "px": 1429,
+    "py": 3181
+  },
+  {
+    "name": "Emerald Way",
+    "type": "street",
+    "px": 2608,
+    "py": 1712
+  },
+  {
+    "name": "Emmitt Street",
+    "type": "street",
+    "px": 1208,
+    "py": 1282
+  },
+  {
+    "name": "Emperor's Road",
+    "type": "street",
+    "px": 1324,
+    "py": 1450
+  },
+  {
+    "name": "Empress Square",
+    "type": "street",
+    "px": 1346,
+    "py": 1683
+  },
+  {
+    "name": "End Road",
+    "type": "street",
+    "px": 4882,
+    "py": 1576
+  },
+  {
+    "name": "End Street",
+    "type": "street",
+    "px": 1057,
+    "py": 2832
+  },
+  {
+    "name": "Envoy Street",
+    "type": "street",
+    "px": 1477,
+    "py": 2814
+  },
+  {
+    "name": "Eriskal St.",
+    "type": "street",
+    "px": 3007,
+    "py": 2050
+  },
+  {
+    "name": "EverLast Street",
+    "type": "street",
+    "px": 3219,
+    "py": 1269
+  },
+  {
+    "name": "Everwood Lane",
+    "type": "street",
+    "px": 2728,
+    "py": 1685
+  },
+  {
+    "name": "Exposed Street",
+    "type": "street",
+    "px": 4021,
+    "py": 1011
+  },
+  {
+    "name": "F. Steel Street",
+    "type": "street",
+    "px": 3394,
+    "py": 2636
+  },
+  {
+    "name": "Face Street",
+    "type": "street",
+    "px": 4047,
+    "py": 1311
+  },
+  {
+    "name": "Fairbriar Street",
+    "type": "street",
+    "px": 2558,
+    "py": 2114
+  },
+  {
+    "name": "Fairbriar",
+    "type": "street",
+    "px": 2630,
+    "py": 2273
+  },
+  {
+    "name": "Fallow Street",
+    "type": "street",
+    "px": 2115,
+    "py": 2059
+  },
+  {
+    "name": "Falls Road",
+    "type": "street",
+    "px": 1996,
+    "py": 1813
+  },
+  {
+    "name": "Family Street",
+    "type": "street",
+    "px": 2119,
+    "py": 2777
+  },
+  {
+    "name": "Farther Street",
+    "type": "street",
+    "px": 2439,
+    "py": 2309
+  },
+  {
+    "name": "Fane St.",
+    "type": "street",
+    "px": 3160,
+    "py": 1876
+  },
+  {
+    "name": "Fellowship St.",
+    "type": "street",
+    "px": 4681,
+    "py": 1924
+  },
+  {
+    "name": "Fenton Street",
+    "type": "street",
+    "px": 3176,
+    "py": 2251
+  },
+  {
+    "name": "Fetch Street",
+    "type": "street",
+    "px": 1647,
+    "py": 1605
+  },
+  {
+    "name": "Fiber Street",
+    "type": "street",
+    "px": 2068,
+    "py": 1099
+  },
+  {
+    "name": "Fir Street",
+    "type": "street",
+    "px": 4259,
+    "py": 3345
+  },
+  {
+    "name": "Firestone Street",
+    "type": "street",
+    "px": 3890,
+    "py": 2157
+  },
+  {
+    "name": "Fisherman's Street",
+    "type": "street",
+    "px": 5060,
+    "py": 1948
+  },
+  {
+    "name": "Flamemoth Way",
+    "type": "street",
+    "px": 1024,
+    "py": 1542
+  },
+  {
+    "name": "Foggy Way",
+    "type": "street",
+    "px": 4097,
+    "py": 2540
+  },
+  {
+    "name": "Foolscap Lane",
+    "type": "street",
+    "px": 3643,
+    "py": 1320
+  },
+  {
+    "name": "Force Row",
+    "type": "street",
+    "px": 2736,
+    "py": 3181
+  },
+  {
+    "name": "Foundling Street",
+    "type": "street",
+    "px": 2183,
+    "py": 2156
+  },
+  {
+    "name": "Foundry St.",
+    "type": "street",
+    "px": 3764,
+    "py": 2771
+  },
+  {
+    "name": "Four Fountains Street",
+    "type": "street",
+    "px": 1337,
+    "py": 2373
+  },
+  {
+    "name": "Fowler's Road",
+    "type": "street",
+    "px": 3682,
+    "py": 3005
+  },
+  {
+    "name": "Prance St.",
+    "type": "street",
+    "px": 3777,
+    "py": 1641
+  },
+  {
+    "name": "Heckle Lane",
+    "type": "street",
+    "px": 1385,
+    "py": 2869
+  },
+  {
+    "name": "Fringe Street",
+    "type": "street",
+    "px": 1794,
+    "py": 2320
+  },
+  {
+    "name": "Frost Street",
+    "type": "street",
+    "px": 2513,
+    "py": 2201
+  },
+  {
+    "name": "Funeral Way",
+    "type": "street",
+    "px": 4143,
+    "py": 1574
+  },
+  {
+    "name": "Gallat Street",
+    "type": "street",
+    "px": 2107,
+    "py": 1211
+  },
+  {
+    "name": "Gem Street",
+    "type": "street",
+    "px": 2984,
+    "py": 2962
+  },
+  {
+    "name": "Giraldon Lane",
+    "type": "street",
+    "px": 4199,
+    "py": 2488
+  },
+  {
+    "name": "Glass Rose Street",
+    "type": "street",
+    "px": 3503,
+    "py": 1351
+  },
+  {
+    "name": "Glass Street",
+    "type": "street",
+    "px": 3058,
+    "py": 3002
+  },
+  {
+    "name": "Glory Street",
+    "type": "street",
+    "px": 3397,
+    "py": 1466
+  },
+  {
+    "name": "Gnarl Street",
+    "type": "street",
+    "px": 2204,
+    "py": 1586
+  },
+  {
+    "name": "Goal Lane",
+    "type": "street",
+    "px": 3116,
+    "py": 1158
+  },
+  {
+    "name": "Gold Street",
+    "type": "street",
+    "px": 1796,
+    "py": 2996
+  },
+  {
+    "name": "Goldback Street",
+    "type": "street",
+    "px": 1814,
+    "py": 2406
+  },
+  {
+    "name": "Golden Elm Way",
+    "type": "street",
+    "px": 2490,
+    "py": 1374
+  },
+  {
+    "name": "Godsday Cir.",
+    "type": "street",
+    "px": 3215,
+    "py": 1520
+  },
+  {
+    "name": "Graveyard Close",
+    "type": "street",
+    "px": 4046,
+    "py": 1499
+  },
+  {
+    "name": "Graycannon Road",
+    "type": "street",
+    "px": 1192,
+    "py": 2354
+  },
+  {
+    "name": "Groom Street",
+    "type": "street",
+    "px": 3719,
+    "py": 2537
+  },
+  {
+    "name": "Grove Street",
+    "type": "street",
+    "px": 810,
+    "py": 1185
+  },
+  {
+    "name": "Guilder Street",
+    "type": "street",
+    "px": 3687,
+    "py": 3327
+  },
+  {
+    "name": "Hammer Close",
+    "type": "street",
+    "px": 3779,
+    "py": 2937
+  },
+  {
+    "name": "Hammer St.",
+    "type": "street",
+    "px": 3826,
+    "py": 2887
+  },
+  {
+    "name": "Hawk Row",
+    "type": "street",
+    "px": 2370,
+    "py": 3030
+  },
+  {
+    "name": "Hawk's Run",
+    "type": "street",
+    "px": 4639,
+    "py": 2252
+  },
+  {
+    "name": "Hazel Street",
+    "type": "street",
+    "px": 1761,
+    "py": 2333
+  },
+  {
+    "name": "Hemp Street",
+    "type": "street",
+    "px": 3890,
+    "py": 3108
+  },
+  {
+    "name": "Herbal Lane",
+    "type": "street",
+    "px": 3922,
+    "py": 2511
+  },
+  {
+    "name": "Heroes Way",
+    "type": "street",
+    "px": 904,
+    "py": 2510
+  },
+  {
+    "name": "High Road",
+    "type": "street",
+    "px": 1334,
+    "py": 2802
+  },
+  {
+    "name": "High Street",
+    "type": "street",
+    "px": 764,
+    "py": 2336
+  },
+  {
+    "name": "Hin St.",
+    "type": "street",
+    "px": 899,
+    "py": 1962
+  },
+  {
+    "name": "Forge Street",
+    "type": "street",
+    "px": 3398,
+    "py": 2795
+  },
+  {
+    "name": "Hogshead Street",
+    "type": "street",
+    "px": 4328,
+    "py": 2759
+  },
+  {
+    "name": "Horseweed Street",
+    "type": "street",
+    "px": 1493,
+    "py": 3061
+  },
+  {
+    "name": "Hostel Street",
+    "type": "street",
+    "px": 3609,
+    "py": 3347
+  },
+  {
+    "name": "Murk Alley",
+    "type": "street",
+    "px": 3659,
+    "py": 2693
+  },
+  {
+    "name": "Hyson Street",
+    "type": "street",
+    "px": 2815,
+    "py": 3196
+  },
+  {
+    "name": "Ingot St.",
+    "type": "street",
+    "px": 2970,
+    "py": 2367
+  },
+  {
+    "name": "Inner Ring Row",
+    "type": "street",
+    "px": 1882,
+    "py": 898
+  },
+  {
+    "name": "Iris Street",
+    "type": "street",
+    "px": 875,
+    "py": 1468
+  },
+  {
+    "name": "Iron Street",
+    "type": "street",
+    "px": 3048,
+    "py": 2663
+  },
+  {
+    "name": "Jasper Street",
+    "type": "street",
+    "px": 3416,
+    "py": 1327
+  },
+  {
+    "name": "Jawline Walk",
+    "type": "street",
+    "px": 3901,
+    "py": 1564
+  },
+  {
+    "name": "Jester Street",
+    "type": "street",
+    "px": 4514,
+    "py": 2085
+  },
+  {
+    "name": "Jeweled Road",
+    "type": "street",
+    "px": 785,
+    "py": 1945
+  },
+  {
+    "name": "Jeweler's Way",
+    "type": "street",
+    "px": 3464,
+    "py": 3224
+  },
+  {
+    "name": "Johnson Street",
+    "type": "street",
+    "px": 4739,
+    "py": 1738
+  },
+  {
+    "name": "Jokerman Row",
+    "type": "street",
+    "px": 1446,
+    "py": 3100
+  },
+  {
+    "name": "Jost Lady Street",
+    "type": "street",
+    "px": 3856,
+    "py": 3160
+  },
+  {
+    "name": "Juniper Street",
+    "type": "street",
+    "px": 3182,
+    "py": 2427
+  },
+  {
+    "name": "Kader Row",
+    "type": "street",
+    "px": 2664,
+    "py": 2499
+  },
+  {
+    "name": "Kam St.",
+    "type": "street",
+    "px": 2831,
+    "py": 2128
+  },
+  {
+    "name": "Kepert Street",
+    "type": "street",
+    "px": 1635,
+    "py": 2631
+  },
+  {
+    "name": "Key Way Street",
+    "type": "street",
+    "px": 2377,
+    "py": 1257
+  },
+  {
+    "name": "King's River",
+    "type": "street",
+    "px": 878,
+    "py": 697
+  },
+  {
+    "name": "King's River Bridge",
+    "type": "street",
+    "px": 1254,
+    "py": 844
+  },
+  {
+    "name": "King's Road",
+    "type": "street",
+    "px": 614,
+    "py": 1349
+  },
+  {
+    "name": "Kint Street",
+    "type": "street",
+    "px": 2430,
+    "py": 2411
+  },
+  {
+    "name": "Klement Avenue",
+    "type": "street",
+    "px": 4699,
+    "py": 1673
+  },
+  {
+    "name": "Labor Street",
+    "type": "street",
+    "px": 3153,
+    "py": 898
+  },
+  {
+    "name": "Lachros Street",
+    "type": "street",
+    "px": 3258,
+    "py": 1775
+  },
+  {
+    "name": "Lavarsh St.",
+    "type": "street",
+    "px": 2249,
+    "py": 2449
+  },
+  {
+    "name": "Leather Street",
+    "type": "street",
+    "px": 3552,
+    "py": 2492
+  },
+  {
+    "name": "Lender Lane",
+    "type": "street",
+    "px": 1503,
+    "py": 2783
+  },
+  {
+    "name": "Licorice Lane",
+    "type": "street",
+    "px": 4409,
+    "py": 3037
+  },
+  {
+    "name": "Light Row",
+    "type": "street",
+    "px": 3652,
+    "py": 1526
+  },
+  {
+    "name": "Lilac Road",
+    "type": "street",
+    "px": 3637,
+    "py": 1409
+  },
+  {
+    "name": "Limit Street",
+    "type": "street",
+    "px": 2506,
+    "py": 1245
+  },
+  {
+    "name": "Linger Street",
+    "type": "street",
+    "px": 2403,
+    "py": 959
+  },
+  {
+    "name": "Lion's Claw Street",
+    "type": "street",
+    "px": 543,
+    "py": 2732
+  },
+  {
+    "name": "Liquor Street",
+    "type": "street",
+    "px": 3951,
+    "py": 948
+  },
+  {
+    "name": "Liripipe Street",
+    "type": "street",
+    "px": 3577,
+    "py": 1006
+  },
+  {
+    "name": "Livestock Pens",
+    "type": "street",
+    "px": 3566,
+    "py": 3481
+  },
+  {
+    "name": "Longhour Street",
+    "type": "street",
+    "px": 878,
+    "py": 1870
+  },
+  {
+    "name": "Lost St.",
+    "type": "street",
+    "px": 2242,
+    "py": 1389
+  },
+  {
+    "name": "Lover's Lane",
+    "type": "street",
+    "px": 4102,
+    "py": 2008
+  },
+  {
+    "name": "Lower God Row",
+    "type": "street",
+    "px": 3121,
+    "py": 2243
+  },
+  {
+    "name": "Lower Rachen Street",
+    "type": "street",
+    "px": 3276,
+    "py": 2894
+  },
+  {
+    "name": "Lumber Street",
+    "type": "street",
+    "px": 3566,
+    "py": 1380
+  },
+  {
+    "name": "Lunas Road",
+    "type": "street",
+    "px": 4266,
+    "py": 2729
+  },
+  {
+    "name": "Lycannon Road",
+    "type": "street",
+    "px": 1366,
+    "py": 2293
+  },
+  {
+    "name": "Lycanthion Road",
+    "type": "street",
+    "px": 1276,
+    "py": 2273
+  },
+  {
+    "name": "Madhouse Street",
+    "type": "street",
+    "px": 3713,
+    "py": 2628
+  },
+  {
+    "name": "Malav Street",
+    "type": "street",
+    "px": 3376,
+    "py": 1637
+  },
+  {
+    "name": "Manticore Lane",
+    "type": "street",
+    "px": 2018,
+    "py": 2475
+  },
+  {
+    "name": "Maple Street",
+    "type": "street",
+    "px": 4243,
+    "py": 1981
+  },
+  {
+    "name": "Market Street",
+    "type": "street",
+    "px": 2543,
+    "py": 1127
+  },
+  {
+    "name": "Marlite Street",
+    "type": "street",
+    "px": 3650,
+    "py": 2363
+  },
+  {
+    "name": "Mason St.",
+    "type": "street",
+    "px": 4123,
+    "py": 3171
+  },
+  {
+    "name": "Master Street",
+    "type": "street",
+    "px": 2307,
+    "py": 2324
+  },
+  {
+    "name": "Meadows Street",
+    "type": "street",
+    "px": 3466,
+    "py": 2323
+  },
+  {
+    "name": "Meditation Circle",
+    "type": "street",
+    "px": 3541,
+    "py": 1499
+  },
+  {
+    "name": "Midden St.",
+    "type": "street",
+    "px": 3777,
+    "py": 3394
+  },
+  {
+    "name": "Middle Street",
+    "type": "street",
+    "px": 1986,
+    "py": 1201
+  },
+  {
+    "name": "Miller St.",
+    "type": "street",
+    "px": 4423,
+    "py": 1613
+  },
+  {
+    "name": "Milkwell Street",
+    "type": "street",
+    "px": 2365,
+    "py": 2952
+  },
+  {
+    "name": "Mill Way",
+    "type": "street",
+    "px": 2397,
+    "py": 2840
+  },
+  {
+    "name": "Mince Street",
+    "type": "street",
+    "px": 2848,
+    "py": 1057
+  },
+  {
+    "name": "Mineret Street",
+    "type": "street",
+    "px": 2927,
+    "py": 1735
+  },
+  {
+    "name": "Mona Lane",
+    "type": "street",
+    "px": 3721,
+    "py": 1904
+  },
+  {
+    "name": "Mourning Dove Street",
+    "type": "street",
+    "px": 2619,
+    "py": 3084
+  },
+  {
+    "name": "Mouser Street",
+    "type": "street",
+    "px": 2642,
+    "py": 3201
+  },
+  {
+    "name": "Nag Street",
+    "type": "street",
+    "px": 4750,
+    "py": 1485
+  },
+  {
+    "name": "Naimal Lane",
+    "type": "street",
+    "px": 2437,
+    "py": 1933
+  },
+  {
+    "name": "Napery Street",
+    "type": "street",
+    "px": 2382,
+    "py": 2803
+  },
+  {
+    "name": "Narrow Street",
+    "type": "street",
+    "px": 4593,
+    "py": 2019
+  },
+  {
+    "name": "Nearcourt Lane",
+    "type": "street",
+    "px": 3895,
+    "py": 1289
+  },
+  {
+    "name": "Needle St.",
+    "type": "street",
+    "px": 3669,
+    "py": 1788
+  },
+  {
+    "name": "Nel St.",
+    "type": "street",
+    "px": 3445,
+    "py": 2578
+  },
+  {
+    "name": "Nethar Street",
+    "type": "street",
+    "px": 3525,
+    "py": 2714
+  },
+  {
+    "name": "Aethel Street",
+    "type": "street",
+    "px": 3286,
+    "py": 2652
+  },
+  {
+    "name": "Never Lane",
+    "type": "street",
+    "px": 2287,
+    "py": 2883
+  },
+  {
+    "name": "Nibeck Street",
+    "type": "street",
+    "px": 1114,
+    "py": 1368
+  },
+  {
+    "name": "North Gate Road",
+    "type": "street",
+    "px": 2304,
+    "py": 1054
+  },
+  {
+    "name": "North River Road",
+    "type": "street",
+    "px": 2660,
+    "py": 1615
+  },
+  {
+    "name": "Norton Circle",
+    "type": "street",
+    "px": 4110,
+    "py": 1724
+  },
+  {
+    "name": "Oak Street",
+    "type": "street",
+    "px": 2885,
+    "py": 2836
+  },
+  {
+    "name": "Old Gnome Street",
+    "type": "street",
+    "px": 3824,
+    "py": 2107
+  },
+  {
+    "name": "Old Mare Street",
+    "type": "street",
+    "px": 3204,
+    "py": 2480
+  },
+  {
+    "name": "Old Sea Road",
+    "type": "street",
+    "px": 4377,
+    "py": 2548
+  },
+  {
+    "name": "Other Street",
+    "type": "street",
+    "px": 1844,
+    "py": 3145
+  },
+  {
+    "name": "Outer Ring Row",
+    "type": "street",
+    "px": 1729,
+    "py": 893
+  },
+  {
+    "name": "Over Lane",
+    "type": "street",
+    "px": 1423,
+    "py": 2850
+  },
+  {
+    "name": "Overlook Road",
+    "type": "street",
+    "px": 4867,
+    "py": 3261
+  },
+  {
+    "name": "Owl Street",
+    "type": "street",
+    "px": 1754,
+    "py": 3106
+  },
+  {
+    "name": "Palace Road",
+    "type": "street",
+    "px": 1096,
+    "py": 1861
+  },
+  {
+    "name": "Park Row",
+    "type": "street",
+    "px": 4229,
+    "py": 2214
+  },
+  {
+    "name": "Passed Over Rd",
+    "type": "street",
+    "px": 2763,
+    "py": 1204
+  },
+  {
+    "name": "Peace Street",
+    "type": "street",
+    "px": 2060,
+    "py": 2486
+  },
+  {
+    "name": "Beltalis Street",
+    "type": "street",
+    "px": 4039,
+    "py": 1833
+  },
+  {
+    "name": "Penny Street",
+    "type": "street",
+    "px": 1675,
+    "py": 3135
+  },
+  {
+    "name": "Pennylost Street",
+    "type": "street",
+    "px": 3657,
+    "py": 1207
+  },
+  {
+    "name": "Perfect Lane",
+    "type": "street",
+    "px": 2749,
+    "py": 2911
+  },
+  {
+    "name": "Perkins Lane",
+    "type": "street",
+    "px": 3455,
+    "py": 2979
+  },
+  {
+    "name": "Peterl Lane",
+    "type": "street",
+    "px": 2750,
+    "py": 2913
+  },
+  {
+    "name": "Pine St.",
+    "type": "street",
+    "px": 4804,
+    "py": 1925
+  },
+  {
+    "name": "Pipe Row",
+    "type": "street",
+    "px": 2358,
+    "py": 2393
+  },
+  {
+    "name": "Pirates Street",
+    "type": "street",
+    "px": 4463,
+    "py": 2990
+  },
+  {
+    "name": "Pitch St.",
+    "type": "street",
+    "px": 1296,
+    "py": 2924
+  },
+  {
+    "name": "Planchette Row",
+    "type": "street",
+    "px": 3934,
+    "py": 1815
+  },
+  {
+    "name": "Planter's St.",
+    "type": "street",
+    "px": 3915,
+    "py": 2619
+  },
+  {
+    "name": "Platinum Street",
+    "type": "street",
+    "px": 3144,
+    "py": 2832
+  },
+  {
+    "name": "Pollen Row",
+    "type": "street",
+    "px": 1888,
+    "py": 2971
+  },
+  {
+    "name": "Posey St.",
+    "type": "street",
+    "px": 4426,
+    "py": 3114
+  },
+  {
+    "name": "Procession of the Faithful",
+    "type": "street",
+    "px": 1022,
+    "py": 2629
+  },
+  {
+    "name": "PTOLUS",
+    "type": "street",
+    "px": 4195,
+    "py": 467
+  },
+  {
+    "name": "Pulldown Street",
+    "type": "street",
+    "px": 2265,
+    "py": 2273
+  },
+  {
+    "name": "Purveyor St.",
+    "type": "street",
+    "px": 3021,
+    "py": 1648
+  },
+  {
+    "name": "Rytismot Road",
+    "type": "street",
+    "px": 3274,
+    "py": 2211
+  },
+  {
+    "name": "Racer Street",
+    "type": "street",
+    "px": 1819,
+    "py": 2708
+  },
+  {
+    "name": "Rain Row",
+    "type": "street",
+    "px": 4817,
+    "py": 2108
+  },
+  {
+    "name": "Rainbow Ln.",
+    "type": "street",
+    "px": 2646,
+    "py": 3161
+  },
+  {
+    "name": "Rainy Lane",
+    "type": "street",
+    "px": 2722,
+    "py": 2423
+  },
+  {
+    "name": "Ralester Street",
+    "type": "street",
+    "px": 3362,
+    "py": 856
+  },
+  {
+    "name": "Ratcatcher Row",
+    "type": "street",
+    "px": 4378,
+    "py": 1940
+  },
+  {
+    "name": "Reave Row",
+    "type": "street",
+    "px": 2451,
+    "py": 2631
+  },
+  {
+    "name": "Rebel Street",
+    "type": "street",
+    "px": 2594,
+    "py": 2983
+  },
+  {
+    "name": "Redoubt St.",
+    "type": "street",
+    "px": 3678,
+    "py": 1593
+  },
+  {
+    "name": "Rene Street",
+    "type": "street",
+    "px": 2586,
+    "py": 2903
+  },
+  {
+    "name": "Resh Street",
+    "type": "street",
+    "px": 4016,
+    "py": 1064
+  },
+  {
+    "name": "Resolve Street",
+    "type": "street",
+    "px": 1157,
+    "py": 2712
+  },
+  {
+    "name": "Ridder Way",
+    "type": "street",
+    "px": 2352,
+    "py": 2457
+  },
+  {
+    "name": "Ridge Road",
+    "type": "street",
+    "px": 1931,
+    "py": 1844
+  },
+  {
+    "name": "Ring Road",
+    "type": "street",
+    "px": 4200,
+    "py": 3207
+  },
+  {
+    "name": "Ripe Road",
+    "type": "street",
+    "px": 2481,
+    "py": 2766
+  },
+  {
+    "name": "Rivergate Bridge",
+    "type": "street",
+    "px": 1624,
+    "py": 1255
+  },
+  {
+    "name": "Old Sea Road",
+    "type": "street",
+    "px": 4535,
+    "py": 3119
+  },
+  {
+    "name": "Robb St.",
+    "type": "street",
+    "px": 3561,
+    "py": 2590
+  },
+  {
+    "name": "Rodney Ave",
+    "type": "street",
+    "px": 4244,
+    "py": 2938
+  },
+  {
+    "name": "Rolleck Row",
+    "type": "street",
+    "px": 3410,
+    "py": 1945
+  },
+  {
+    "name": "Roman St.",
+    "type": "street",
+    "px": 2741,
+    "py": 2258
+  },
+  {
+    "name": "Rooster Street",
+    "type": "street",
+    "px": 3320,
+    "py": 2812
+  },
+  {
+    "name": "Rope Street",
+    "type": "street",
+    "px": 3516,
+    "py": 2803
+  },
+  {
+    "name": "Rum Road",
+    "type": "street",
+    "px": 3750,
+    "py": 2718
+  },
+  {
+    "name": "Runshallot St.",
+    "type": "street",
+    "px": 2799,
+    "py": 2019
+  },
+  {
+    "name": "Sabon St.",
+    "type": "street",
+    "px": 4094,
+    "py": 2921
+  },
+  {
+    "name": "Sailor's Run",
+    "type": "street",
+    "px": 4445,
+    "py": 1885
+  },
+  {
+    "name": "Salash Street",
+    "type": "street",
+    "px": 4916,
+    "py": 1519
+  },
+  {
+    "name": "Salmon St.",
+    "type": "street",
+    "px": 4839,
+    "py": 1961
+  },
+  {
+    "name": "Salt Spray Street",
+    "type": "street",
+    "px": 4991,
+    "py": 1924
+  },
+  {
+    "name": "Salt Street",
+    "type": "street",
+    "px": 4586,
+    "py": 2197
+  },
+  {
+    "name": "Sandy St.",
+    "type": "street",
+    "px": 1329,
+    "py": 2904
+  },
+  {
+    "name": "Scroll Street",
+    "type": "street",
+    "px": 2521,
+    "py": 981
+  },
+  {
+    "name": "Seamist Street",
+    "type": "street",
+    "px": 4791,
+    "py": 2335
+  },
+  {
+    "name": "Secret Street",
+    "type": "street",
+    "px": 2695,
+    "py": 1219
+  },
+  {
+    "name": "Seepage Row",
+    "type": "street",
+    "px": 3917,
+    "py": 3321
+  },
+  {
+    "name": "Shade Street",
+    "type": "street",
+    "px": 2141,
+    "py": 2570
+  },
+  {
+    "name": "Shadow Road",
+    "type": "street",
+    "px": 1254,
+    "py": 1906
+  },
+  {
+    "name": "Shandler Lane",
+    "type": "street",
+    "px": 2940,
+    "py": 2339
+  },
+  {
+    "name": "Shell Row",
+    "type": "street",
+    "px": 3953,
+    "py": 1244
+  },
+  {
+    "name": "Shepherd Street",
+    "type": "street",
+    "px": 3204,
+    "py": 812
+  },
+  {
+    "name": "Shield St",
+    "type": "street",
+    "px": 3542,
+    "py": 1095
+  },
+  {
+    "name": "Shimmer Lane",
+    "type": "street",
+    "px": 3256,
+    "py": 1709
+  },
+  {
+    "name": "Shipman Lane",
+    "type": "street",
+    "px": 2415,
+    "py": 2671
+  },
+  {
+    "name": "Shop Walk",
+    "type": "street",
+    "px": 4016,
+    "py": 1310
+  },
+  {
+    "name": "Short St.",
+    "type": "street",
+    "px": 4689,
+    "py": 1798
+  },
+  {
+    "name": "Showing St.",
+    "type": "street",
+    "px": 2776,
+    "py": 3204
+  },
+  {
+    "name": "Skinny Lane",
+    "type": "street",
+    "px": 2206,
+    "py": 3047
+  },
+  {
+    "name": "Skunk St.",
+    "type": "street",
+    "px": 4223,
+    "py": 3264
+  },
+  {
+    "name": "Small Yew Way",
+    "type": "street",
+    "px": 3309,
+    "py": 2475
+  },
+  {
+    "name": "Smith Street",
+    "type": "street",
+    "px": 3540,
+    "py": 2897
+  },
+  {
+    "name": "Smoke Street",
+    "type": "street",
+    "px": 4111,
+    "py": 3084
+  },
+  {
+    "name": "Smokestack Row",
+    "type": "street",
+    "px": 3435,
+    "py": 3281
+  },
+  {
+    "name": "Smooth Street",
+    "type": "street",
+    "px": 3610,
+    "py": 946
+  },
+  {
+    "name": "Snake Street",
+    "type": "street",
+    "px": 3673,
+    "py": 1380
+  },
+  {
+    "name": "Solemn St.",
+    "type": "street",
+    "px": 4556,
+    "py": 1551
+  },
+  {
+    "name": "Song Row",
+    "type": "street",
+    "px": 4481,
+    "py": 1583
+  },
+  {
+    "name": "South River Road",
+    "type": "street",
+    "px": 3639,
+    "py": 1675
+  },
+  {
+    "name": "South Street",
+    "type": "street",
+    "px": 2862,
+    "py": 3115
+  },
+  {
+    "name": "Spear Street",
+    "type": "street",
+    "px": 2143,
+    "py": 3122
+  },
+  {
+    "name": "Spoiled St.",
+    "type": "street",
+    "px": 1771,
+    "py": 3165
+  },
+  {
+    "name": "Spoof Street",
+    "type": "street",
+    "px": 1232,
+    "py": 2946
+  },
+  {
+    "name": "Squire Street",
+    "type": "street",
+    "px": 859,
+    "py": 2423
+  },
+  {
+    "name": "Stable Lane",
+    "type": "street",
+    "px": 3817,
+    "py": 2569
+  },
+  {
+    "name": "Starchild Street",
+    "type": "street",
+    "px": 2965,
+    "py": 1579
+  },
+  {
+    "name": "Stewpot St.",
+    "type": "street",
+    "px": 4109,
+    "py": 2692
+  },
+  {
+    "name": "Stone Way",
+    "type": "street",
+    "px": 4028,
+    "py": 3170
+  },
+  {
+    "name": "Storm Street",
+    "type": "street",
+    "px": 3484,
+    "py": 2665
+  },
+  {
+    "name": "Straw Street",
+    "type": "street",
+    "px": 2156,
+    "py": 2675
+  },
+  {
+    "name": "Stray Lane",
+    "type": "street",
+    "px": 1564,
+    "py": 3282
+  },
+  {
+    "name": "Street of a Million Gods",
+    "type": "street",
+    "px": 3098,
+    "py": 1697
+  },
+  {
+    "name": "Strup Street",
+    "type": "street",
+    "px": 2423,
+    "py": 1994
+  },
+  {
+    "name": "Sulfur Street",
+    "type": "street",
+    "px": 2381,
+    "py": 3091
+  },
+  {
+    "name": "Sunrise Street",
+    "type": "street",
+    "px": 3236,
+    "py": 1646
+  },
+  {
+    "name": "Sunrod Street",
+    "type": "street",
+    "px": 1787,
+    "py": 2510
+  },
+  {
+    "name": "Sword Street",
+    "type": "street",
+    "px": 3112,
+    "py": 3238
+  },
+  {
+    "name": "Tabor Street",
+    "type": "street",
+    "px": 1810,
+    "py": 1086
+  },
+  {
+    "name": "Taelath Street",
+    "type": "street",
+    "px": 2492,
+    "py": 1870
+  },
+  {
+    "name": "Tailor St.",
+    "type": "street",
+    "px": 3603,
+    "py": 2544
+  },
+  {
+    "name": "Tannery Street",
+    "type": "street",
+    "px": 3193,
+    "py": 3010
+  },
+  {
+    "name": "Taper Street",
+    "type": "street",
+    "px": 3132,
+    "py": 738
+  },
+  {
+    "name": "Tarsis Street",
+    "type": "street",
+    "px": 2101,
+    "py": 2463
+  },
+  {
+    "name": "Tavern Row",
+    "type": "street",
+    "px": 2732,
+    "py": 2094
+  },
+  {
+    "name": "Tenet Street",
+    "type": "street",
+    "px": 2732,
+    "py": 1049
+  },
+  {
+    "name": "Terrock Row",
+    "type": "street",
+    "px": 2531,
+    "py": 1453
+  },
+  {
+    "name": "Textiles Street",
+    "type": "street",
+    "px": 3518,
+    "py": 3335
+  },
+  {
+    "name": "Thicket Street",
+    "type": "street",
+    "px": 687,
+    "py": 1264
+  },
+  {
+    "name": "Three Princes Street",
+    "type": "street",
+    "px": 904,
+    "py": 1615
+  },
+  {
+    "name": "Throne St.",
+    "type": "street",
+    "px": 3417,
+    "py": 1078
+  },
+  {
+    "name": "Thrush Street",
+    "type": "street",
+    "px": 1629,
+    "py": 2670
+  },
+  {
+    "name": "Thunder Row",
+    "type": "street",
+    "px": 1810,
+    "py": 2666
+  },
+  {
+    "name": "Tin Street",
+    "type": "street",
+    "px": 3017,
+    "py": 2759
+  },
+  {
+    "name": "Tinker Street",
+    "type": "street",
+    "px": 1477,
+    "py": 2899
+  },
+  {
+    "name": "Toner Street",
+    "type": "street",
+    "px": 1128,
+    "py": 1332
+  },
+  {
+    "name": "Tonic Street",
+    "type": "street",
+    "px": 1738,
+    "py": 712
+  },
+  {
+    "name": "Tooling Way",
+    "type": "street",
+    "px": 2438,
+    "py": 2534
+  },
+  {
+    "name": "Toolosh Street",
+    "type": "street",
+    "px": 632,
+    "py": 1828
+  },
+  {
+    "name": "Tower Road",
+    "type": "street",
+    "px": 1537,
+    "py": 1592
+  },
+  {
+    "name": "Turnback Street",
+    "type": "street",
+    "px": 2409,
+    "py": 2189
+  },
+  {
+    "name": "Two Horses St.",
+    "type": "street",
+    "px": 4209,
+    "py": 2661
+  },
+  {
+    "name": "Ugly Child Lane",
+    "type": "street",
+    "px": 2649,
+    "py": 2639
+  },
+  {
+    "name": "Uthegos St.",
+    "type": "street",
+    "px": 2850,
+    "py": 1991
+  },
+  {
+    "name": "Upper God Way",
+    "type": "street",
+    "px": 2995,
+    "py": 962
+  },
+  {
+    "name": "Urgent Street",
+    "type": "street",
+    "px": 2097,
+    "py": 1834
+  },
+  {
+    "name": "Vadarast Street",
+    "type": "street",
+    "px": 3976,
+    "py": 2773
+  },
+  {
+    "name": "Vadarast Street",
+    "type": "street",
+    "px": 4187,
+    "py": 1953
+  },
+  {
+    "name": "Vaddis Street",
+    "type": "street",
+    "px": 1698,
+    "py": 1057
+  },
+  {
+    "name": "Value Lane",
+    "type": "street",
+    "px": 3029,
+    "py": 1273
+  },
+  {
+    "name": "Van Mitten Street",
+    "type": "street",
+    "px": 2822,
+    "py": 2909
+  },
+  {
+    "name": "Vaneth St.",
+    "type": "street",
+    "px": 3008,
+    "py": 1824
+  },
+  {
+    "name": "Vanguard Street",
+    "type": "street",
+    "px": 4133,
+    "py": 3017
+  },
+  {
+    "name": "Varnish Row",
+    "type": "street",
+    "px": 2074,
+    "py": 1593
+  },
+  {
+    "name": "Veil Lane",
+    "type": "street",
+    "px": 4137,
+    "py": 1343
+  },
+  {
+    "name": "Venture Road",
+    "type": "street",
+    "px": 4391,
+    "py": 3440
+  },
+  {
+    "name": "View Street",
+    "type": "street",
+    "px": 4037,
+    "py": 2050
+  },
+  {
+    "name": "Yllistio St.",
+    "type": "street",
+    "px": 2875,
+    "py": 2187
+  },
+  {
+    "name": "Vock Row",
+    "type": "street",
+    "px": 1690,
+    "py": 1736
+  },
+  {
+    "name": "Von Tessel Street",
+    "type": "street",
+    "px": 1858,
+    "py": 2008
+  },
+  {
+    "name": "W Surf Street",
+    "type": "street",
+    "px": 4597,
+    "py": 3176
+  },
+  {
+    "name": "W. Copper Street",
+    "type": "street",
+    "px": 3093,
+    "py": 2718
+  },
+  {
+    "name": "W. Steel Street",
+    "type": "street",
+    "px": 3113,
+    "py": 2767
+  },
+  {
+    "name": "Warrant Street",
+    "type": "street",
+    "px": 2218,
+    "py": 1723
+  },
+  {
+    "name": "Warren Avenue",
+    "type": "street",
+    "px": 4241,
+    "py": 2279
+  },
+  {
+    "name": "Wash Street",
+    "type": "street",
+    "px": 1648,
+    "py": 894
+  },
+  {
+    "name": "Washboard Lane",
+    "type": "street",
+    "px": 2447,
+    "py": 1267
+  },
+  {
+    "name": "Wastor Lane",
+    "type": "street",
+    "px": 2572,
+    "py": 875
+  },
+  {
+    "name": "Water Street",
+    "type": "street",
+    "px": 4833,
+    "py": 3092
+  },
+  {
+    "name": "Wavecrest Way",
+    "type": "street",
+    "px": 4808,
+    "py": 1456
+  },
+  {
+    "name": "Wayfarer's Street",
+    "type": "street",
+    "px": 4134,
+    "py": 3422
+  },
+  {
+    "name": "Weaponsmith Row",
+    "type": "street",
+    "px": 3064,
+    "py": 3175
+  },
+  {
+    "name": "Well St.",
+    "type": "street",
+    "px": 3446,
+    "py": 2580
+  },
+  {
+    "name": "Welter Lane",
+    "type": "street",
+    "px": 3967,
+    "py": 1883
+  },
+  {
+    "name": "Wending Way",
+    "type": "street",
+    "px": 3272,
+    "py": 2032
+  },
+  {
+    "name": "Weston Road",
+    "type": "street",
+    "px": 4353,
+    "py": 3373
+  },
+  {
+    "name": "Wharf Road",
+    "type": "street",
+    "px": 5131,
+    "py": 1719
+  },
+  {
+    "name": "Whipstone Street",
+    "type": "street",
+    "px": 1476,
+    "py": 2380
+  },
+  {
+    "name": "White Street",
+    "type": "street",
+    "px": 2590,
+    "py": 2673
+  },
+  {
+    "name": "Willow Ln.",
+    "type": "street",
+    "px": 4760,
+    "py": 1945
+  },
+  {
+    "name": "Wings Falls",
+    "type": "street",
+    "px": 2035,
+    "py": 1445
+  },
+  {
+    "name": "Winter Road",
+    "type": "street",
+    "px": 1383,
+    "py": 1985
+  },
+  {
+    "name": "Wondering Lane",
+    "type": "street",
+    "px": 3617,
+    "py": 1751
+  },
+  {
+    "name": "Wood Road",
+    "type": "street",
+    "px": 3518,
+    "py": 3029
+  },
+  {
+    "name": "Woodsman Street",
+    "type": "street",
+    "px": 2141,
+    "py": 2960
+  },
+  {
+    "name": "Worry Lane",
+    "type": "street",
+    "px": 2763,
+    "py": 801
+  },
+  {
+    "name": "Yarrow Street",
+    "type": "street",
+    "px": 1379,
+    "py": 2636
+  },
+  {
+    "name": "Yeoman St.",
+    "type": "street",
+    "px": 2870,
+    "py": 2672
+  },
+  {
+    "name": "The Little Green Detective Agency",
+    "type": "property",
+    "px": 3019,
+    "py": 1987
   }
 ]

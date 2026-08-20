@@ -170,6 +170,7 @@ body {
 }
 
 .recal-btn {
+  display: none;
   position: absolute;
   right: 8px;
   top: 50%;
@@ -183,6 +184,10 @@ body {
   padding: 2px 4px;
   cursor: pointer;
   transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+body.edit-mode .recal-btn {
+  display: block;
 }
 
 #results li:hover .recal-btn {
@@ -223,13 +228,16 @@ body {
 .loc-type.gate     { color: #4a6848; }
 .loc-type.landmark { color: #5a4a6a; }
 .loc-type.area     { color: #7a5840; }
+.loc-type.street   { color: #6a7858; }
+.loc-type.property { color: #a3402e; }
 
-/* ── Calibrate button ───────────────────────────────────────────────────── */
+/* ── Sidebar action buttons ─────────────────────────────────────────────── */
 
+#add-location-btn,
 #calibrate-btn {
-  display: block;
+  display: none;
   width: calc(100% - 28px);
-  margin: 6px 14px 14px;
+  margin: 6px 14px 0;
   padding: 6px 12px;
   background: none;
   border: 1px solid rgba(201,171,108,0.35);
@@ -243,10 +251,20 @@ body {
   transition: background 0.15s, border-color 0.15s, color 0.15s;
 }
 
+#calibrate-btn {
+  margin-bottom: 14px;
+}
+
+#add-location-btn:hover,
 #calibrate-btn:hover {
   background: rgba(180,140,60,0.08);
   border-color: #c9ab6c;
   color: #8a6a1e;
+}
+
+body.edit-mode #add-location-btn,
+body.edit-mode #calibrate-btn {
+  display: block;
 }
 
 /* ── Calibration overlay (inside #map) ──────────────────────────────────── */
@@ -282,6 +300,15 @@ body {
   margin-bottom: 4px;
 }
 
+.calib-section {
+  font-family: Cinzel, serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #a3792e;
+  margin-bottom: 4px;
+}
+
 .calib-progress {
   font-family: Cinzel, serif;
   font-size: 0.65rem;
@@ -306,6 +333,53 @@ body {
 
 .calib-skip:hover {
   background: rgba(180,140,60,0.1);
+}
+
+/* ── Add-location form (inside #calib-overlay) ──────────────────────────── */
+
+.add-loc-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.add-loc-name,
+.add-loc-type {
+  width: 100%;
+  padding: 6px 8px;
+  background: linear-gradient(to bottom, #faf3e0, #f0e4c8);
+  border: 1px solid #c9ab6c;
+  border-radius: 2px;
+  color: #3a2e1e;
+  font-family: Lora, Georgia, serif;
+  font-size: 0.82rem;
+  outline: none;
+}
+
+.add-loc-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.add-loc-place {
+  background: linear-gradient(to bottom, #d4af50, #b8922e);
+  border: none;
+  border-radius: 2px;
+  color: #3a2e1e;
+  font-family: Cinzel, serif;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 14px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.add-loc-place:hover {
+  background: linear-gradient(to bottom, #e0bb5a, #c49e38);
 }
 
 /* ── Calibration export modal ────────────────────────────────────────────── */
