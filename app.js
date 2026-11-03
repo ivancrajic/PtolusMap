@@ -236,6 +236,7 @@
             '<div class="calib-name">' + name + '</div>' +
             '<div class="calib-sub">Click on the map to place it</div>' +
             '<button class="calib-skip">Cancel</button>';
+          L.DomEvent.disableClickPropagation(overlay);
 
           var clickHandler = null;
 
@@ -285,6 +286,7 @@
           '<div class="calib-name">' + loc.name + '</div>' +
           '<div class="calib-sub">Click the location on the map</div>' +
           '<button class="calib-skip">Cancel</button>';
+        L.DomEvent.disableClickPropagation(overlay);
         document.getElementById('map').appendChild(overlay);
 
         map.flyTo(toLL(loc.px, loc.py), -1, { duration: 0.4 });
@@ -314,8 +316,8 @@
         calibrating = true;
         clearHighlight();
 
-        // Keep each item's place in the source array so the exported JSON
-        // preserves file order even though we walk it grouped by section.
+        // Keep each item's place in the source array so results can be written
+        // back to it, even though we walk it grouped by section.
         var source = locs.map(function (l, i) {
           var copy = Object.assign({}, l);
           copy._origIndex = i;
@@ -336,6 +338,7 @@
 
         var overlay = document.createElement('div');
         overlay.id = 'calib-overlay';
+        L.DomEvent.disableClickPropagation(overlay);
         document.getElementById('map').appendChild(overlay);
 
         function step() {
@@ -389,11 +392,13 @@
           clearHighlight();
           overlay.remove();
 
-          var cleaned = calibrated.slice()
-            .sort(function (a, b) { return a._origIndex - b._origIndex; })
-            .map(function (l) { return { name: l.name, type: l.type, px: l.px, py: l.py }; });
+          // Update the live locations too, so later edits and exports keep this pass.
+          calibrated.forEach(function (l) {
+            locs[l._origIndex].px = l.px;
+            locs[l._origIndex].py = l.py;
+          });
 
-          showExportModal('Calibration complete', JSON.stringify(cleaned, null, 2));
+          showExportModal('Calibration complete', JSON.stringify(locs, null, 2));
         }
 
         step();

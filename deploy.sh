@@ -7,7 +7,8 @@ DIST_ID="E1QK9UWYT2P3B3"
 
 # Stage the map image from Sources/ into img/ for the sync
 mkdir -p img
-cp Sources/ptolus_city_map.jpg img/
+# -p keeps the file's date, so sync doesn't re-upload an unchanged image
+cp -p Sources/ptolus_city_map.jpg img/
 
 echo "Syncing to s3://$BUCKET/$PREFIX/ ..."
 aws s3 sync . "s3://$BUCKET/$PREFIX/" \
@@ -17,6 +18,7 @@ aws s3 sync . "s3://$BUCKET/$PREFIX/" \
   --include "app.js" \
   --include "locations.json" \
   --include "img/ptolus_city_map.jpg" \
+  --cache-control "no-cache" \
   --delete
 
 echo "Invalidating CloudFront cache ..."
